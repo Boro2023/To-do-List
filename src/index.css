@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(140, 60, 214);
+}
+.to-do-list-container{
+  display: flex;
+  justify-content: center;
+ 
+}
+.to-do-list{
+
+  font-family:  sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  max-width: 800px;
+  width: 70%;
+}
+h1{
+  font-size: 3rem;
+  color: rgb(64, 16, 109);
+}
+button{
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.text.completed{
+  text-decoration: line-through;
+  color: rgb(218, 218, 218);
+}
+/*For add button*/
+.add-button{
+  background-color: rgb(82, 148, 254);
+  margin-left: 10px;
+}
+.add-button:hover{
+  background-color: rgb(20, 92, 207);
+}
+.add-button:active{
+  opacity: 0.5;
+}
+
+/*For delete button*/
+.delete-button{
+  background-color: rgb(255, 69, 69);
+}
+.delete-button:hover{
+  background-color: rgb(233, 43, 43);
+}
+.delete-button:active{
+  opacity: 0.5;
+}
+/*Move up button*/
+.up-button{
+  background-color: rgb(128, 136, 255);
+}
+.up-button:hover{
+  opacity: 0.8;
+}
+.up-button:active{
+  opacity: 0.5;
+}
+.to-do-list input[type="text"]{
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+.to-do-list input[type="checkbox"]{
+  transform: scale(1.5);
+  margin-right: 5px;
+  outline: none;
+}
+ol{
+  text-align: center;
+  padding: 0;
+}
+li{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 15px;
+  background-color: rgb(201, 144, 255);
+  color: rgb(120, 29, 205);
+  font-weight: bold;
+  margin: 10px auto;
+  margin-bottom: 10px;
+}
+.text{
+  flex:1;
+  text-align: left;
+}
+.delete-button{
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.up-button{
+  padding: 7px 12px;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
